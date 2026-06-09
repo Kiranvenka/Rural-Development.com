@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rural Development - Awareness on Government Schemes, an 8-week ECE Community Service Project focused on rural welfare awareness and social impact." />
+  <meta name="keywords" content="Rural Development, Government Schemes, CSP, ECE, PM-KISAN, MGNREGA, PMAY-G, Community Service Project" />
+  <meta name="author" content="Department of Electronics and Communication Engineering" />
+  <meta property="og:title" content="Rural Development - Awareness on Government Schemes" />
+  <meta property="og:description" content="Empowering rural communities through awareness of government welfare schemes." />
+  <meta property="og:type" content="website" />
+  <title>Rural Development | Awareness on Government Schemes</title>
+
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <script>
+    (function () {
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch (error) {
+        savedTheme = null;
+      }
+
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if ((savedTheme || (prefersDark ? 'dark' : 'light')) === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+
+    window.tailwindConfig = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1455d9',
+            forest: '#18864b',
+            ink: '#0f172a',
+            mist: '#eef6ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Arial', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 55px rgba(15, 23, 42, 0.12)'
+          }
+        }
+      }
+    };
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = window.tailwindConfig;
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.tailwind.config = window.tailwindConfig;
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/30 bg-white/95 shadow-sm backdrop-blur-xl transition dark:border-slate-800 dark:bg-slate-950/94">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-3" aria-label="Rural Development home">
+        <span class="grid h-11 w-11 place-items-center rounded-lg bg-primary text-white shadow-lg shadow-blue-700/20">
+          <i class="fa-solid fa-seedling"></i>
+        </span>
+        <span>
+          <span class="block text-base font-extrabold leading-tight text-slate-950 dark:text-white">Rural Development</span>
+          <span class="brand-subtitle block text-xs font-semibold uppercase tracking-wide dark:text-emerald-300">ECE CSP 2025-26</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#timeline">Timeline</a>
+        <a class="nav-link" href="#schemes">Schemes</a>
+        <a class="nav-link" href="#findings">Findings</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="menuToggle" class="icon-btn lg:hidden" type="button" aria-label="Open navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-950 lg:hidden">
+      <div class="grid gap-2">
+        <a class="mobile-link" href="#about">About Project</a>
+        <a class="mobile-link" href="#timeline">Timeline</a>
+        <a class="mobile-link" href="#schemes">Government Schemes</a>
+        <a class="mobile-link" href="#gallery">Gallery</a>
+        <a class="mobile-link" href="#findings">Survey Findings</a>
+        <a class="mobile-link" href="#team">Project Team</a>
+        <a class="mobile-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero relative min-h-screen overflow-hidden pt-24">
+      <div class="absolute inset-0 z-0">
+        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=80" alt="Green agricultural field in a rural village" />
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/86 via-blue-950/68 to-emerald-900/35"></div>
+      </div>
+      <div class="relative z-10 mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl items-center px-4 pb-16 pt-16 sm:px-6 lg:px-8">
+        <div class="max-w-4xl text-white" data-aos="fade-up">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/12 px-4 py-2 text-sm font-semibold backdrop-blur-md">
+            <i class="fa-solid fa-hands-holding-circle text-emerald-300"></i>
+            Community Service Project | 8 Weeks | ECE
+          </div>
+          <h1 class="text-5xl font-black leading-tight sm:text-6xl lg:text-7xl">Rural Development</h1>
+          <p class="mt-4 text-2xl font-bold text-emerald-100 sm:text-3xl">Awareness on Government Schemes</p>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-blue-50 sm:text-xl">
+            Empowering Rural Communities Through Knowledge, Awareness, and Access to Government Welfare Schemes.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a class="primary-btn" href="#about"><i class="fa-solid fa-compass"></i> Explore Project</a>
+            <a class="secondary-btn" href="#schemes"><i class="fa-solid fa-landmark"></i> View Government Schemes</a>
+          </div>
+        </div>
+      </div>
+      <div class="relative z-10 mx-auto -mt-24 grid max-w-7xl gap-4 px-4 pb-8 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div class="hero-stat" data-aos="fade-up" data-aos-delay="80"><span>Project Type</span><strong>CSP</strong></div>
+        <div class="hero-stat" data-aos="fade-up" data-aos-delay="160"><span>Duration</span><strong>8 Weeks</strong></div>
+        <div class="hero-stat" data-aos="fade-up" data-aos-delay="240"><span>Department</span><strong>ECE</strong></div>
+        <div class="hero-stat" data-aos="fade-up" data-aos-delay="320"><span>Academic Year</span><strong>2025-26</strong></div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-white dark:bg-slate-950">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.85fr] lg:px-8">
+        <div data-aos="fade-right">
+          <p class="eyebrow">About The Project</p>
+          <h2 class="section-title">Awareness That Helps Citizens Reach Benefits</h2>
+          <p class="section-copy">
+            This 8-week Community Service Project was conducted to create awareness among rural citizens regarding important government welfare schemes. The project focused on educating villagers about employment opportunities, housing assistance, healthcare benefits, education support, sanitation programs, and farmer welfare initiatives.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="info-tile"><i class="fa-solid fa-map-location-dot"></i><span>Village survey and community interaction</span></div>
+            <div class="info-tile"><i class="fa-solid fa-people-group"></i><span>Meetings, guidance, and follow-up visits</span></div>
+            <div class="info-tile"><i class="fa-solid fa-mobile-screen-button"></i><span>Digital literacy and e-governance support</span></div>
+            <div class="info-tile"><i class="fa-solid fa-chart-line"></i><span>Impact assessment and feedback collection</span></div>
+          </div>
+        </div>
+        <div class="project-detail-panel" data-aos="fade-left">
+          <div>
+            <p class="panel-kicker">Project Snapshot</p>
+            <h3>Rural Development Through Scheme Awareness</h3>
+            <p>
+              The team visited households, interacted with residents, explained welfare benefits, and guided eligible citizens toward official scheme portals and required documents.
+            </p>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Field Area</span>
+              <strong>Gooty, Andhra Pradesh</strong>
+            </div>
+            <div class="detail-card">
+              <i class="fa-solid fa-users-viewfinder"></i>
+              <span>Target Groups</span>
+              <strong>Farmers, women, students, workers, and rural families</strong>
+            </div>
+            <div class="detail-card">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span>Methods Used</span>
+              <strong>Survey, door-to-door visits, meetings, and follow-up support</strong>
+            </div>
+            <div class="detail-card">
+              <i class="fa-solid fa-file-circle-check"></i>
+              <span>Support Provided</span>
+              <strong>Eligibility guidance, document awareness, and application help</strong>
+            </div>
+          </div>
+          <div class="scheme-focus">
+            <span>Key Focus Schemes</span>
+            <div>
+              <strong>PM-KISAN</strong>
+              <strong>MGNREGA</strong>
+              <strong>PMAY-G</strong>
+              <strong>PM-JAY</strong>
+              <strong>NSP</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives" class="section bg-mist dark:bg-slate-900">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl" data-aos="fade-up">
+          <p class="eyebrow">Project Objectives</p>
+          <h2 class="section-title">Clear Goals For Rural Welfare Awareness</h2>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="feature-card" data-aos="zoom-in"><i class="fa-solid fa-bullhorn"></i><h3>Create Awareness</h3><p>Share reliable information about major government welfare schemes.</p></article>
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="80"><i class="fa-solid fa-circle-info"></i><h3>Improve Access</h3><p>Help rural citizens find scheme details, benefits, and application paths.</p></article>
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="160"><i class="fa-solid fa-file-signature"></i><h3>Explain Eligibility</h3><p>Educate villagers about eligibility criteria and documentation.</p></article>
+          <article class="feature-card" data-aos="zoom-in"><i class="fa-solid fa-laptop"></i><h3>Digital Literacy</h3><p>Promote e-governance tools and online service access.</p></article>
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="80"><i class="fa-solid fa-hand-holding-heart"></i><h3>Encourage Benefits</h3><p>Motivate eligible families to use available welfare programs.</p></article>
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="160"><i class="fa-solid fa-tree-city"></i><h3>Support Development</h3><p>Contribute to social welfare through informed participation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section bg-white dark:bg-slate-950">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center" data-aos="fade-up">
+          <p class="eyebrow justify-center">8-Week Project Timeline</p>
+          <h2 class="section-title">From Survey To Impact Report</h2>
+        </div>
+        <div class="timeline mt-12">
+          <div class="timeline-item" data-aos="fade-up"><span>Week 1</span><h3>Village Survey and Community Interaction</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 2</span><h3>Identification of Government Welfare Schemes</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 3</span><h3>Collection of Scheme Information and Preparation of Awareness Materials</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 4</span><h3>Door-to-Door Awareness Campaign</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 5</span><h3>Community Meetings and Awareness Sessions</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 6</span><h3>Guidance on Application Procedures and Eligibility</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 7</span><h3>Follow-Up Visits and Clarification of Doubts</h3></div>
+          <div class="timeline-item" data-aos="fade-up"><span>Week 8</span><h3>Impact Assessment, Feedback Collection, and Report Preparation</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schemes" class="section bg-slate-50 dark:bg-slate-900">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between" data-aos="fade-up">
+          <div class="max-w-3xl">
+            <p class="eyebrow">Government Schemes</p>
+            <h2 class="section-title">Official Welfare Programs Shared With Villagers</h2>
+          </div>
+          <label class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="schemeSearch" type="search" placeholder="Search schemes..." aria-label="Search government schemes" />
+          </label>
+        </div>
+        <div id="schemeGrid" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+        <p id="noResults" class="mt-8 hidden rounded-lg border border-dashed border-slate-300 p-6 text-center font-semibold text-slate-500 dark:border-slate-700 dark:text-slate-400">No matching schemes found.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section bg-white dark:bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl" data-aos="fade-up">
+          <p class="eyebrow">Awareness Campaign Gallery</p>
+          <h2 class="section-title">Field Activities And Community Engagement</h2>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <button class="gallery-card" data-title="Door-to-Door Scheme Awareness" data-image="assets/gallery/shilpa-1.jfif">
+            <img src="assets/gallery/shilpa-1.jfif" alt="ECE students explaining government schemes to residents in Gooty" />
+            <span><strong>Door-to-Door Scheme Awareness</strong><small>Govt Schemes | Gooty | Field Visit</small></span>
+          </button>
+          <button class="gallery-card" data-title="Student Team With Community Member" data-image="assets/gallery/shilpa-2.jfif">
+            <img src="assets/gallery/shilpa-2.jfif" alt="Student team holding CSP awareness banner with community member" />
+            <span><strong>Student Team With Community Member</strong><small>Student Participation | Rural Development</small></span>
+          </button>
+          <button class="gallery-card" data-title="Village Household Interaction" data-image="assets/gallery/shilpa-3.jfif">
+            <img src="assets/gallery/shilpa-3.jfif" alt="Students interacting with villagers during household awareness visit" />
+            <span><strong>Village Household Interaction</strong><small>Community Interaction | Awareness Campaign</small></span>
+          </button>
+          <button class="gallery-card" data-title="Beneficiary Guidance Visit" data-image="assets/gallery/shilpa-4.jfif">
+            <img src="assets/gallery/shilpa-4.jfif" alt="Students guiding a villager about welfare schemes during field work" />
+            <span><strong>Beneficiary Guidance Visit</strong><small>Eligibility Support | Door-to-Door</small></span>
+          </button>
+          <button class="gallery-card" data-title="Community Awareness Session" data-image="assets/gallery/shilpa-5.jfif">
+            <img src="assets/gallery/shilpa-5.jfif" alt="Students conducting a government scheme awareness session with rural women" />
+            <span><strong>Community Awareness Session</strong><small>Women Outreach | Scheme Information</small></span>
+          </button>
+          <button class="gallery-card" data-title="Awareness Banner Presentation" data-image="assets/gallery/shilpa-6.jfif">
+            <img src="assets/gallery/shilpa-6.jfif" alt="CSP banner presentation for rural development and government schemes" />
+            <span><strong>Awareness Banner Presentation</strong><small>Project Display | Government Schemes</small></span>
+          </button>
+          <button class="gallery-card" data-title="Village Survey And Discussion" data-image="assets/gallery/shilpa-7.jfif">
+            <img src="assets/gallery/shilpa-7.jfif" alt="Student team surveying a villager outside a household" />
+            <span><strong>Village Survey And Discussion</strong><small>Survey | Documentation | Follow-up</small></span>
+          </button>
+          <button class="gallery-card" data-title="Team Field Documentation" data-image="assets/gallery/shilpa-8.jfif">
+            <img src="assets/gallery/shilpa-8.jfif" alt="Students documenting field visit details with CSP banner" />
+            <span><strong>Team Field Documentation</strong><small>Impact Record | Student Participation</small></span>
+          </button>
+          <button class="gallery-card" data-title="Beneficiary Awareness Photo" data-image="assets/gallery/shilpa-9.jfif">
+            <img src="assets/gallery/shilpa-9.jfif" alt="Student and resident holding government scheme awareness banner" />
+            <span><strong>Beneficiary Awareness Photo</strong><small>Beneficiary Guidance | Welfare Schemes</small></span>
+          </button>
+          <button class="gallery-card" data-title="Government Scheme Outreach" data-image="assets/gallery/shilpa-10.jfif">
+            <img src="assets/gallery/shilpa-10.jfif" alt="Student and villager presenting CSP government scheme awareness banner" />
+            <span><strong>Government Scheme Outreach</strong><small>CSP Activity | Rural Welfare | Gooty</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="findings" class="section bg-mist dark:bg-slate-900">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl" data-aos="fade-up">
+          <p class="eyebrow">Survey Findings</p>
+          <h2 class="section-title">Awareness Improved Through Focused Outreach</h2>
+        </div>
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <div class="chart-card" data-aos="fade-up"><h3>Awareness Before vs After Campaign</h3><canvas id="awarenessChart" aria-label="Awareness before and after campaign chart"></canvas></div>
+          <div class="chart-card" data-aos="fade-up" data-aos-delay="120"><h3>Scheme-wise Awareness Growth</h3><canvas id="growthChart" aria-label="Scheme-wise awareness growth chart"></canvas></div>
+          <div class="chart-card lg:col-span-2" data-aos="fade-up"><h3>Outreach Findings</h3><canvas id="outreachChart" aria-label="Outreach findings chart"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section bg-white dark:bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center" data-aos="fade-up">
+          <p class="eyebrow justify-center">Project Impact</p>
+          <h2 class="section-title">Measured Outcomes From The Campaign</h2>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div class="counter-card"><i class="fa-solid fa-users"></i><strong data-counter="420">0</strong><span>Villagers Reached</span></div>
+          <div class="counter-card"><i class="fa-solid fa-landmark"></i><strong data-counter="10">0</strong><span>Government Schemes Explained</span></div>
+          <div class="counter-card"><i class="fa-solid fa-comments"></i><strong data-counter="18">0</strong><span>Awareness Sessions Conducted</span></div>
+          <div class="counter-card"><i class="fa-solid fa-user-graduate"></i><strong data-counter="5">0</strong><span>Students Participated</span></div>
+          <div class="counter-card"><i class="fa-solid fa-handshake-angle"></i><strong data-counter="96">0</strong><span>Beneficiaries Guided</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges" class="section bg-slate-50 dark:bg-slate-900">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div data-aos="fade-right">
+          <p class="eyebrow">Challenges</p>
+          <h2 class="section-title">Barriers Identified During Field Work</h2>
+          <div class="mt-7 grid gap-4">
+            <div class="challenge-row"><i class="fa-solid fa-circle-exclamation"></i><span>Lack of awareness</span></div>
+            <div class="challenge-row"><i class="fa-solid fa-circle-exclamation"></i><span>Digital illiteracy</span></div>
+            <div class="challenge-row"><i class="fa-solid fa-circle-exclamation"></i><span>Language barriers</span></div>
+            <div class="challenge-row"><i class="fa-solid fa-circle-exclamation"></i><span>Documentation issues</span></div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <p class="eyebrow">Solutions</p>
+          <h2 class="section-title">Support Methods Used By The Team</h2>
+          <div class="mt-7 grid gap-4">
+            <div class="solution-row"><i class="fa-solid fa-circle-check"></i><span>Awareness programs</span></div>
+            <div class="solution-row"><i class="fa-solid fa-circle-check"></i><span>Local language communication</span></div>
+            <div class="solution-row"><i class="fa-solid fa-circle-check"></i><span>Digital assistance</span></div>
+            <div class="solution-row"><i class="fa-solid fa-circle-check"></i><span>Follow-up support</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section bg-white dark:bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center" data-aos="fade-up">
+          <p class="eyebrow justify-center">Project Team</p>
+          <h2 class="section-title">Department of Electronics and Communication Engineering</h2>
+        </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <article class="team-card" data-aos="fade-up"><div>GS</div><h3>G. Shilpa</h3><p>Roll No: 24F21A04E3</p></article>
+          <article class="team-card" data-aos="fade-up" data-aos-delay="80"><div>SV</div><h3>S. Vasundhara</h3><p>Roll No: 24F21A04H9</p></article>
+          <article class="team-card" data-aos="fade-up" data-aos-delay="160"><div>CY</div><h3>C. Yashwanthi</h3><p>Roll No: 24F21A04J3</p></article>
+          <article class="team-card" data-aos="fade-up" data-aos-delay="240"><div>CD</div><h3>C. Dastagiri Vali</h3><p>Roll No: 24F21A04J8</p></article>
+          <article class="team-card" data-aos="fade-up" data-aos-delay="320"><div>TV</div><h3>T. Venkateshulu</h3><p>Roll No: 24F21A04I5</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion" class="section conclusion-band">
+      <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8" data-aos="zoom-in">
+        <p class="eyebrow justify-center text-emerald-100">Conclusion</p>
+        <h2 class="text-3xl font-black text-white sm:text-4xl">Community Awareness With Practical Social Value</h2>
+        <p class="mt-6 text-lg leading-8 text-blue-50">
+          "The Rural Development - Awareness on Government Schemes project successfully improved awareness among rural citizens regarding government welfare programs. Through surveys, awareness campaigns, and community engagement, the project contributed to empowering villagers with information that can improve their social and economic well-being."
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-slate-50 dark:bg-slate-900">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1fr] lg:px-8">
+        <div data-aos="fade-right">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Community Service Project (CSP)</h2>
+          <div class="mt-7 space-y-4">
+            <div class="contact-line"><i class="fa-solid fa-building-columns"></i><span>Department of Electronics and Communication Engineering</span></div>
+            <div class="contact-line"><i class="fa-solid fa-hands-helping"></i><span>Community Service Project (CSP)</span></div>
+            <div class="contact-line"><i class="fa-solid fa-calendar-days"></i><span>Academic Year 2025-26</span></div>
+          </div>
+        </div>
+        <div class="scheme-finder" data-aos="fade-left">
+          <div>
+            <p class="panel-kicker">Interactive Scheme Finder</p>
+            <h3>Choose a Need and See Matching Schemes</h3>
+            <p>Select the support area a villager needs. The guide instantly highlights suitable government schemes and official portals discussed during the CSP campaign.</p>
+          </div>
+
+          <div class="need-grid" aria-label="Scheme need selector">
+            <button class="need-chip active" type="button" data-need="farmer"><i class="fa-solid fa-wheat-awn"></i> Farmer Support</button>
+            <button class="need-chip" type="button" data-need="job"><i class="fa-solid fa-person-digging"></i> Employment</button>
+            <button class="need-chip" type="button" data-need="house"><i class="fa-solid fa-house-chimney"></i> Housing</button>
+            <button class="need-chip" type="button" data-need="health"><i class="fa-solid fa-heart-pulse"></i> Healthcare</button>
+            <button class="need-chip" type="button" data-need="student"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+            <button class="need-chip" type="button" data-need="women"><i class="fa-solid fa-people-roof"></i> Women SHGs</button>
+          </div>
+
+          <div id="schemeFinderResult" class="finder-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 px-4 py-10 text-center text-slate-300">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="text-xl font-black text-white">Community Service Project (CSP)</h2>
+      <p class="mt-2 font-semibold text-emerald-300">Rural Development - Awareness on Government Schemes</p>
+      <p class="mt-2">Department of Electronics and Communication Engineering | Academic Year 2025-26</p>
+      <p class="mt-4 text-sm">G. Shilpa | S. Vasundhara | C. Yashwanthi | C. Dastagiri Vali | T. Venkateshulu</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Gallery image preview">
+    <button id="closeLightbox" class="icon-btn absolute right-5 top-5 bg-white text-slate-900" type="button" aria-label="Close image preview"><i class="fa-solid fa-xmark"></i></button>
+    <figure>
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
